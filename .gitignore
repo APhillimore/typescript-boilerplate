@@ -1,0 +1,9 @@
+/node_modules/
+/build/
+/public/
+/dist/
+/docs/
+/coverage/
+*.ppk
+*.pem
+

@@ -1,0 +1,16 @@
+{
+	"name": "@typescript-boilerplate/example_pkg",
+	"version": "0.0.0",
+	"description": "A simple example sub package",
+	"main": "index.ts",
+	"devDependencies": {},
+	"scripts": {
+		"test": "jest"
+	},
+	"keywords": [
+		"sub-package",
+		"typescript"
+	],
+	"author": "Aron Phillimore",
+	"license": "MIT"
+}
