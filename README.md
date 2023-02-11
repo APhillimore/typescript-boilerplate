@@ -34,18 +34,20 @@ npm install
     - SFTP - https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp
 
 
-# Conventions
+# Conventions / Style Guide
 
 Suggested conventions:
 
 Split related functionality into separate packages within the workspace
 
 ```
+- naming: 
+    - filenames: lowercase snake_case
+    - constructors, classes: PascalCase
+    - test location: <dir>/__testing__
+    - test file name: <ts_file>.test.ts
+    - other: camelCase
 
-filenames: lowercase snake_case
-functions: camelcase
-comma dangle: yes
-test location: <dir>/__testing__
-test file name: <ts_file>.test.ts
+- comma dangle: yes
 
 ```
