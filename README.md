@@ -1,4 +1,4 @@
-# Quick start for typescript projects
+# Quick Start for Typescript Projects
 
 
 # Getting Started
@@ -16,12 +16,12 @@ npm install
 # Additional - Recommended Packages
 
 - Runtime types and validation
-    - io-ts (fp | richest)
-    - zod (lightweight)
+    - io-ts (fp-ts | richest)
+    - Zod (lightweight)
 
 
 
-# Additional - Recommended VSCode plugins
+# Additional - Recommended VSCode Plugins
 
 - linting
     - prettier eslint
@@ -38,13 +38,13 @@ npm install
 
 Suggested conventions:
 
-Split related functionality into seperate packages within the workspace
+Split related functionality into separate packages within the workspace
 
 ```
 
 filenames: lowercase snake_case
 functions: camelcase
-commadangle: yes
+comma dangle: yes
 test location: <dir>/__testing__
 test file name: <ts_file>.test.ts
 
