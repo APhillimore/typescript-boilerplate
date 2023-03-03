@@ -1,6 +1,6 @@
 {
 	"name": "@typescript-boilerplate/config",
-	"version": "1.0.0",
+	"private": true,
 	"description": "Shared configs for linting, formatting, etc",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
