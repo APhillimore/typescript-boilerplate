@@ -1,0 +1,1 @@
+A package to collect repo wide utilities including, Errors and Error handling, Logging, etc

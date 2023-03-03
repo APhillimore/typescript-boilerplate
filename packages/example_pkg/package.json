@@ -3,9 +3,20 @@
 	"version": "0.0.0",
 	"description": "A simple example sub package",
 	"main": "index.ts",
+	"prettier": "@typescript-boilerplate/config/prettier",
+	"eslintConfig": {
+		"extends": [
+			"@typescript-boilerplate/config/eslint"
+		]
+	},
 	"devDependencies": {},
 	"scripts": {
-		"test": "jest"
+		"build": "tsc",
+		"test": "jest",
+		"test:coverage": "jest --coverage",
+		"format": "prettier --write \"**/*.{ts,tsx, js, jsx}\"",
+		"format:check": "prettier --write \"**/*.{ts,tsx, js, jsx}\"",
+		"docs": "typedoc --out docs src"
 	},
 	"keywords": [
 		"sub-package",

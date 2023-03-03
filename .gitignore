@@ -1,9 +1,14 @@
+node_modules
 /node_modules/
 /build/
-/public/
 /dist/
 /docs/
 /coverage/
+
+# Anything sensitive
 *.ppk
 *.pem
+*.crt
+*.key
+*.log
 

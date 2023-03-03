@@ -1,4 +1,4 @@
-// A function to test that the config
+/** Check that esm imports are behaving */
 export function anExportedExample(): string {
 	return 'hello world';
 }

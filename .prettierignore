@@ -1,6 +1,12 @@
 /node_modules/
+package-lock.json
 /build/
 /dist/
 /public/
 /.vscode/
 /.git/
+/docs/
+/coverage/
+*.ppk
+*.pem
+*.log
