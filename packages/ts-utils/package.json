@@ -1,0 +1,41 @@
+{
+    "name": "@typescript-boilerplate/ts-utils",
+    "private": true,
+    "description": "typescript utils",
+    "main": "index.ts",
+    "prettier": "@typescript-boilerplate/prettier-config",
+    "eslintConfig": {
+        "extends": [
+            "@typescript-boilerplate/eslint-config"
+        ]
+    },
+    "devDependencies": {
+        "@typescript-boilerplate/prettier-config": "workspace:*",
+        "@typescript-boilerplate/eslint-config": "workspace:*",
+        "@typescript-boilerplate/jest-config": "workspace:*",
+        "@typescript-eslint/eslint-plugin": "^5.51.0",
+        "@typescript-eslint/parser": "^5.51.0",
+        "eslint": "^8.34.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2",
+        "prettier": "^2.8.4",
+        "typescript": "^4.9.5"
+    },
+    "scripts": {
+        "docs": "typedoc --entryPoints index.ts",
+        "test": "jest",
+        "coverage": "jest --coverage",
+        "lint": "eslint --fix .",
+        "lint:check": "eslint .",
+        "format": "prettier --write \"**/*.{ts,tsx,js,jsx}\"",
+        "format:check": "prettier  --check \"**/*.{ts,tsx,js,jsx}\""
+    },
+    "keywords": [
+        "typescript",
+        "utils"
+    ],
+    "author": "Aron Phillimore",
+    "license": "MIT",
+    "type": "module"
+}

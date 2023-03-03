@@ -1,0 +1,56 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+
+	"pipeline": {
+		"download": {
+			"dependsOn": ["^download"]
+		},
+		"setup": {
+			"dependsOn": ["generate", "test"]
+		},
+
+		"dev": {
+			"outputs": ["__temp__/**"],
+			"persistent": true
+		},
+		"preview": {
+			"persistent": true
+		},
+		"build": {},
+		"test": {
+			"dependsOn": ["generate"],
+			"outputs": ["__temp__/**"]
+		},
+
+		"coverage": {},
+		"docs": {},
+
+		"clean:build": {
+			"dependsOn": ["generate", "test"],
+			"outputs": ["dist/**"]
+		},
+
+		"generate": {
+			"outputs": ["__generated__/**"],
+			"dependsOn": ["download"]
+		},
+
+		"lint": {},
+		"lint:check": {},
+
+		"format": {},
+		"format:check": {
+			"dependsOn": ["generate", "test", "build"]
+		},
+
+		"cd:test": {
+			"dependsOn": ["generate", "test"]
+		},
+		"cd:lint": {
+			"dependsOn": ["format:check", "lint:check"]
+		},
+		"cd:build": {
+			"dependsOn": ["generate", "test", "build"]
+		}
+	}
+}
