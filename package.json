@@ -3,6 +3,7 @@
   "packageManager": "^pnpm@7.27.1",
   "version": "0.0.0",
   "description": "boilerplate for typescript projects",
+  "prettier": "@typescript-boilerplate/prettier-config",
   "eslintConfig": {
     "extends": [
       "@typescript-boilerplate/eslint-config"
