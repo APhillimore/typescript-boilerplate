@@ -1,8 +1,8 @@
 /** Memoise a function */
-export function memoise<T extends (...args: any[]) => any>(fn: T): T {
+export function memoise<T extends (...args: unknown[]) => unknown>(fn: T): T {
     let called = false;
-    let result: any;
-    return ((...args: any[]) => {
+    let result: unknown;
+    return ((...args: unknown[]) => {
         if (!called) {
             called = true;
             result = fn(...args);

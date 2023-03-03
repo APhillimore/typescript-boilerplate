@@ -1,9 +1,8 @@
-node_modules
-/node_modules/
-/build/
-/dist/
-/docs/
-/coverage/
+node_modules/
+build/
+dist/
+docs/
+coverage/
 
 # Anything sensitive
 *.ppk
