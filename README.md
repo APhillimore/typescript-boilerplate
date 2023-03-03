@@ -50,7 +50,7 @@ Written in Rust and super fast.
 
 
 # Typedoc
-Create documentation using your comments and ts types.
+Create documentation using jsdoc comments and ts types.
 
 # Eslint
 

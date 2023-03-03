@@ -12,6 +12,7 @@
     "devDependencies": {
         "@typescript-boilerplate/prettier-config": "workspace:*",
         "@typescript-boilerplate/eslint-config": "workspace:*",
+        "@typescript-boilerplate/jest-config": "workspace:*",
         "@typescript-eslint/eslint-plugin": "^5.51.0",
         "@typescript-eslint/parser": "^5.51.0",
         "eslint": "^8.34.0",

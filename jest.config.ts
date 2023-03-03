@@ -1,12 +1,7 @@
-import type { Config } from 'jest';
-
+import { Config } from "jest";
+import base from "@typescript-boilerplate/jest-config";
 const config: Config = {
-	collectCoverageFrom: ['**/*.{js,jsx}', '!**/node_modules/**', '!**/vendor/**'],
-	preset: 'ts-jest',
-	transform: {
-		'^.+\\.(ts|tsx)?$': 'ts-jest',
-		'^.+\\.(js|jsx)$': 'babel-jest',
-	},
+    ...base,
 };
 
 export default config;
