@@ -24,6 +24,7 @@ jobs:
       - name: Run Tests
         run: |
           npm i pnpm -g
+          pnpm --version
           pnpm i 
           pnpm add turbo -g
           turbo cd:test
