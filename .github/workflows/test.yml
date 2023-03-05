@@ -8,7 +8,16 @@ on:
       branches: [main]
 
 jobs:
-  Lint:
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
+
+
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -17,14 +26,12 @@ jobs:
           pnpm i 
           pnpm i turbo -g
           turbo cd:lint
-  Test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Run Tests
         run: |
-          npm i pnpm -g
-          pnpm --version
           pnpm i 
           pnpm add turbo -g
           turbo cd:test
