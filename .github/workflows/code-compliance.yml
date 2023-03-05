@@ -2,6 +2,7 @@ name: Unit Tests
 
 on:
   - pull_request
+  - push
 
 jobs:
   code-compliance:
@@ -42,7 +43,7 @@ jobs:
       - name: Install local dependencies
         run: pnpm install
         
-      - name: 
+      - name: Generate
         run: turbo generate
 
       - name: Lint
