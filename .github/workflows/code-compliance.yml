@@ -49,4 +49,4 @@ jobs:
         run: turbo cd:lint
 
       - name: Test
-        run: turbo cd:lint
+        run: turbo cd:test
