@@ -5,11 +5,9 @@ module.exports = {
         amd: true,
         node: true,
     },
-
+    ignorePatterns: ["node_modules", "dist", "build", "docs", "coverage"],
     plugins: ["@typescript-eslint", "prettier"],
-
-    extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:react/recommended", "prettier"],
-
+    extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
     parser: "@typescript-eslint/parser",
     parserOptions: {
         ecmaFeatures: {
@@ -18,7 +16,6 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: "module",
     },
-
     rules: {
         "prettier/prettier": [
             "error",
@@ -37,13 +34,7 @@ module.exports = {
         ],
         "linebreak-style": ["error", "unix"],
     },
-    settings: {
-        react: {
-            version: "detect",
-        },
-    },
     root: true,
-
     globals: {
         process: "readonly",
     },

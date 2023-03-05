@@ -1,26 +1,26 @@
 {
-  "name": "@typescript-boilerplate/eslint-config",
-  "private": true,
-  "description": "Shared configs for linting, formatting, etc",
-  "scripts": {
-    "test": "echo \"Error: config no test specified\" && exit 1"
-  },
-  "main": "index.js",
-  "keywords": [
-    "configuration",
-    "eslint",
-    "prettier",
-    "typescript",
-    "config"
-  ],
-  "author": "Aron Phillimore",
-  "license": "MIT",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
-    "@typescript-eslint/parser": "^5.51.0",
-    "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2"
-  }
+    "name": "@typescript-boilerplate/eslint-config",
+    "private": true,
+    "description": "Shared configs for linting, formatting, etc",
+    "scripts": {
+        "test": "echo \"INFO: no test specified\""
+    },
+    "main": "index.js",
+    "keywords": [
+        "configuration",
+        "eslint",
+        "prettier",
+        "typescript",
+        "config"
+    ],
+    "author": "Aron Phillimore",
+    "license": "MIT",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.51.0",
+        "@typescript-eslint/parser": "^5.51.0",
+        "eslint": "^8.34.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2"
+    }
 }
