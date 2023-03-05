@@ -23,6 +23,7 @@ jobs:
       - uses: actions/checkout@v1
       - name: Run Tests
         run: |
+          npm i pnpm -g
           pnpm i 
-          pnpm i turbo -g
+          pnpm add turbo -g
           turbo cd:test
